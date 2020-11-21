@@ -23,7 +23,7 @@ public class WCRunner {
 		
 		Configuration conf = new Configuration();
 		conf.set("fs.defaultFS", "hdfs://ha:9000");
-		conf.set("hbase.zookeeper.quorum", "192.168.21.153");
+		conf.set("hbase.zookeeper.quorum", "hb");
 		Job job = Job.getInstance(conf);
 		job.setJarByClass(WCRunner.class);
 

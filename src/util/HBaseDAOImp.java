@@ -42,7 +42,7 @@ public class HBaseDAOImp {
 	public HBaseDAOImp()
 	{
 		 conf = new Configuration();
-		String zk_list = "192.168.21.153";
+		String zk_list = "hb";
 		conf.set("hbase.zookeeper.quorum", zk_list);
 		try {
 			hTablePool = HConnectionManager.createConnection(conf) ;
